@@ -1,0 +1,65 @@
+<section class="results" ng-controller="resultsCtrl">
+    <h2 class="title title-secundary">Resultado da busca: {{ searchName == null ? '----' : searchName; }}</h2>
+
+    <div class="results__box">
+        <div class="results__user" ng-show="userChecked.length == 0 ? false : true">
+            <figure class="results__user-image">
+                <img ng-src="{{ avatar }}" class="results__user-image__img">
+            </figure>
+            <div class="results__user-name">
+                <h3 class="title title-tertiary">
+                    {{ name == null ? '----' : name; }}
+                </h3>
+                <p class="paragraph-primary">
+                    {{ searchName == null ? '----' : searchName; }}
+                </p>
+            </div>
+            <div class="results__user-info">
+                <p class="paragraph-primary">
+                   <strong>Biografia</strong><br> 
+                   <span> {{ bio == null ? '----' : bio; }}</span>
+                </p>
+                <a class="paragraph-primary">
+                    <strong>Empresa</strong><br> 
+                    <span>{{ interprise == null ? '----' : interprise; }}</span>
+                </a>
+                <a class="paragraph-primary">
+                    <strong>Portfolio</strong><br>
+                     <span>{{ blog == null ? '----' : blog; }}</span>
+                </a>
+                <p class="paragraph-primary">
+                    <strong>Email</strong><br> 
+                    <span>{{ email == null ?  '----' : email; }}</span>
+                </p>
+            </div>
+        </div>
+        <div class="results__repository" ng-show="repository.length == 0 ? false : true">
+            <h3 class="title title-tertiary">
+                Repos:
+            </h3>
+            <div class="repos">
+                <a ng-href="{{rep.clone_url}}" target="_blank" class="results__repository-repos" ng-repeat="rep in repository">
+                    <h4 class="title title-room">
+                        {{ rep.name == null ?  '----' : rep.name; }}
+                    </h4>
+                    <p class="paragraph-primary">
+                        {{ rep.language == null ?  '----' : rep.language; }}
+                    </p>
+                </a>
+            </div>
+            <h3 class="title title-tertiary" ng-show="starreds.length == 0 ? false : true">
+                Starred
+            </h3>
+            <div class="repos" >
+                <a ng-href="{{rep.clone_url}}" target="_blank" class="results__repository-repos" ng-repeat="star in starreds">
+                    <h4 class="title title-room">
+                        {{ star.name == null ?  '----' : star.name; }}
+                    </h4>
+                    <p class="paragraph-primary">
+                        {{ star.language == null ?  '----' : star.language; }}
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

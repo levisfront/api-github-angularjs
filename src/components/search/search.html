@@ -1,0 +1,13 @@
+<section class="contents search" >
+    <form class="search__form">
+        <h2 class="title title-secundary">
+            Digite o repositorio desejado!
+        </h2>
+        <div class="search__form-group">
+            <input type="text" class="search__form-group__input" ng-keyup="getkeys($event)" ng-model="$parent.search">
+            <a ng-click="getSearch()" class="btn-primary btn-primary--large">Buscar</a>
+        </div>
+        <p class="paragraph-secundary" ng-model="err"> {{ err }} </p>
+        <p class="paragraph-secundary"> <strong> Digitado: </strong>{{ search }}</p>
+    </form>
+</section>

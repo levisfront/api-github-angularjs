@@ -1,0 +1,24 @@
+{
+  "name": "cielo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "levi.oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^3.3.4",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-deps-order": "^0.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "run-sequence": "^2.2.1"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="br">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="robots" content="NOINDEX, NOFOLLOW">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <title>CIELO</title>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+
+        <div ng-app="myApp" ng-controller="myCtrl" class="content">
+
+            <div class="container">
+                <!-- header -->
+                <header ng-include="'header/header.html'" class="header"></header>
+
+                <!-- routes -->
+                <ng-view></ng-view>
+            </div>
+
+            <!-- footer -->
+            <footer ng-include="'footer/footer.html'" class="footer"></footer>
+            
+            <!-- spinner -->
+            <div ng-include="'spinner/spinner.html'" class="spinners hide" ng-controller="spinnerCtrl"></div>
+
+        </div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+@import "src/scss/variables.scss";
+
+.search {
+    margin-top: 60px;
+
+    &__form {
+        width: 100%;
+        .title-secundary {
+            margin-bottom: 30px;
+        }
+        .paragraph-secundary {
+            margin-top: 15px;
+        }
+
+        &-group {
+            display: flex;
+            justify-content: space-between;
+
+            &__input {
+                flex: 1;
+                padding: 15px;
+                color:  $color-gray-dark;
+                background-color: $color-white;
+                border: none;
+                -webkit-box-shadow: 2px 0px 16px rgba(17, 21, 41, 0.3);
+                box-shadow: 2px 0px 16px rgba(17, 21, 41, 0.3);
+                outline: none;
+                font-weight: lighter;
+                
+                &:focus {
+                    color: $color-black;
+                }
+            }
+            .btn-primary {
+                margin-left: 10px;
+                border-radius: 0px 10px 10px 0px;
+            }
+        }
+    }
+}

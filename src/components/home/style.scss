@@ -1,0 +1,25 @@
+@import "src/scss/variables.scss";
+
+/*=========================
+    Home
+==========================*/
+.home {
+    
+    height: auto;
+
+    &__brand {
+
+        .fa-github {
+            font-size: 10rem;
+            margin-bottom: 50px;
+        }
+    }
+    .paragraph-primary {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .btn-primary {
+        margin-bottom: 50px;
+    }
+}
